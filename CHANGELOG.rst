@@ -22,7 +22,7 @@ _____
 * Version in __init__.py
 
 Changed
-_____
+_______
 
 * name of package in setup.py file
 
@@ -37,6 +37,6 @@ _____
 * LearnerPathwayMembership model.
 
 Changed
-_____
+_______
 
 * main branch from `main` to `master`
