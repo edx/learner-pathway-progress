@@ -6,6 +6,7 @@ from django.contrib import admin
 from learner_pathway_progress.models import LearnerPathwayMembership
 
 
+@admin.register(LearnerPathwayMembership)
 class LearnerPathwayMembershipAdmin(admin.ModelAdmin):
     """
     Admin for LearnerPathwayMembership Model.
@@ -20,6 +21,3 @@ class LearnerPathwayMembershipAdmin(admin.ModelAdmin):
         """
 
         model = LearnerPathwayMembership
-
-
-admin.site.register(LearnerPathwayMembership, LearnerPathwayMembershipAdmin)
