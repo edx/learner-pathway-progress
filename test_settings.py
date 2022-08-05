@@ -45,7 +45,7 @@ LOCALE_PATHS = [
     root('learner_pathway_progress', 'conf', 'locale'),
 ]
 
-ROOT_URLCONF = 'learner_pathway_progress.urls'
+ROOT_URLCONF = 'learner_pathway_progress.api.urls'
 
 SECRET_KEY = 'insecure-secret-key'
 
