@@ -7,7 +7,7 @@ from rest_framework.authentication import SessionAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 from learner_pathway_progress.api.filters import PathwayProgressUUIDFilter
-from learner_pathway_progress.api.serializers import PathwayProgressSerializer
+from learner_pathway_progress.api.serializers import LearnerPathwayProgressSerializer
 from learner_pathway_progress.models import LearnerPathwayProgress
 
 
@@ -138,7 +138,7 @@ class LearnerPathwayProgressViewSet(viewsets.ReadOnlyModelViewSet):
     lookup_field = 'learner_pathway_uuid'
     lookup_value_regex = '[0-9a-f-]+'
     filter_backends = (DjangoFilterBackend,)
-    serializer_class = PathwayProgressSerializer
+    serializer_class = LearnerPathwayProgressSerializer
     filterset_class = PathwayProgressUUIDFilter
 
     def get_queryset(self):

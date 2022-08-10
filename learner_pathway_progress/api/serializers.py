@@ -9,11 +9,12 @@ from rest_framework import serializers
 from learner_pathway_progress.models import LearnerPathwayProgress
 
 
-class PathwayProgressSerializer(serializers.ModelSerializer):
+class LearnerPathwayProgressSerializer(serializers.ModelSerializer):
     """
     Serializer for LearnerPathwayProgress model.
     """
     learner_pathway_progress = serializers.SerializerMethodField()
+
     class Meta:
         model = LearnerPathwayProgress
         fields = ['learner_pathway_progress']
