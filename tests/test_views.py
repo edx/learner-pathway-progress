@@ -11,7 +11,7 @@ from django.test import Client, TestCase
 from pytest import mark
 
 from learner_pathway_progress.models import LearnerPathwayProgress
-from tests.constants import (
+from test_utils.constants import (
     LEARNER_PATHWAY_A_UUID,
     LEARNER_PATHWAY_B_UUID,
     LEARNER_PATHWAY_C_UUID,

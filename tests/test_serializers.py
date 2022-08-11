@@ -10,8 +10,8 @@ from django.test import TestCase
 
 from learner_pathway_progress.api.serializers import LearnerPathwayProgressSerializer
 from learner_pathway_progress.models import LearnerPathwayProgress
-from tests.constants import LEARNER_PATHWAY_A_UUID, LEARNER_PATHWAY_PROGRESS_DATA
-from tests.test_utils import make_request
+from test_utils.constants import LEARNER_PATHWAY_A_UUID, LEARNER_PATHWAY_PROGRESS_DATA
+from test_utils.utils import make_request
 
 User = get_user_model()
 
