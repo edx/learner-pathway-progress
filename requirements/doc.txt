@@ -33,7 +33,6 @@ asgiref==3.7.2
 asn1crypto==1.5.1
     # via
     #   -r requirements/test.txt
-    #   oscrypto
     #   snowflake-connector-python
 backports-zoneinfo[tzdata]==0.2.1
     # via
@@ -42,6 +41,9 @@ backports-zoneinfo[tzdata]==0.2.1
     #   celery
     #   kombu
 billiard==4.2.0
+    # via
+    #   -r requirements/test.txt
+    #   celery
     #   pytest
 babel==2.13.1
     # via
@@ -314,7 +316,7 @@ imagesize==1.4.1
     # via sphinx
 importlib-metadata==7.0.0
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   build
     #   keyring
     #   sphinx
     #   twine
@@ -495,7 +497,6 @@ pytz==2023.3.post1
     # via
     #   -r requirements/test.txt
     #   babel
-    #   celery
     #   django
     #   djangorestframework
     #   edx-enterprise
@@ -561,7 +562,6 @@ snowflake-connector-python==3.6.0
     #   edx-enterprise
 soupsieve==2.5
     # via beautifulsoup4
-sphinx==5.1.1
 sortedcontainers==2.4.0
     # via
     #   -r requirements/test.txt
