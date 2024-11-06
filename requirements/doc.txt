@@ -4,6 +4,8 @@
 #
 #    make upgrade
 #
+accessible-pygments==0.0.5
+    # via pydata-sphinx-theme
 alabaster==0.7.13
     # via sphinx
 amqp==5.2.0
@@ -32,8 +34,6 @@ asn1crypto==1.5.1
     # via
     #   -r requirements/test.txt
     #   snowflake-connector-python
-babel==2.13.1
-    # via sphinx
 backports-zoneinfo[tzdata]==0.2.1
     # via
     #   -r requirements/test.txt
@@ -44,6 +44,13 @@ billiard==4.2.0
     # via
     #   -r requirements/test.txt
     #   celery
+    #   pytest
+babel==2.13.1
+    # via
+    #   pydata-sphinx-theme
+    #   sphinx
+beautifulsoup4==4.12.3
+    # via pydata-sphinx-theme
 bleach==6.1.0
     # via
     #   -r requirements/test.txt
@@ -130,7 +137,6 @@ distro==1.8.0
 django==3.2.23
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
-    #   -r requirements/test.txt
     #   django-config-models
     #   django-crum
     #   django-fernet-fields-v2
@@ -223,6 +229,7 @@ doc8==1.1.1
 docutils==0.19
     # via
     #   doc8
+    #   pydata-sphinx-theme
     #   readme-renderer
     #   restructuredtext-lint
     #   sphinx
@@ -263,8 +270,6 @@ edx-rest-api-client==5.6.1
     # via
     #   -r requirements/test.txt
     #   edx-enterprise
-edx-sphinx-theme==3.1.0
-    # via -r requirements/doc.in
 edx-tincan-py35==1.0.0
     # via
     #   -r requirements/test.txt
@@ -374,6 +379,7 @@ packaging==23.2
     # via
     #   -r requirements/test.txt
     #   build
+    #   pydata-sphinx-theme
     #   pytest
     #   snowflake-connector-python
     #   sphinx
@@ -432,9 +438,13 @@ pydantic-core==2.14.5
     # via
     #   -r requirements/test.txt
     #   pydantic
-pygments==2.17.2
+pydata-sphinx-theme==0.15.4
+    # via sphinx-book-theme
+pygments==2.12.0
     # via
+    #   accessible-pygments
     #   doc8
+    #   pydata-sphinx-theme
     #   readme-renderer
     #   rich
     #   sphinx
@@ -531,7 +541,7 @@ six==1.16.0
     #   -r requirements/test.txt
     #   bleach
     #   edx-rbac
-    #   edx-sphinx-theme
+    #   pyjwkest
     #   python-dateutil
 slumber==0.7.1
     # via
@@ -550,6 +560,8 @@ snowflake-connector-python==3.6.0
     # via
     #   -r requirements/test.txt
     #   edx-enterprise
+soupsieve==2.5
+    # via beautifulsoup4
 sortedcontainers==2.4.0
     # via
     #   -r requirements/test.txt
@@ -557,8 +569,11 @@ sortedcontainers==2.4.0
 sphinx==5.3.0
     # via
     #   -r requirements/doc.in
-    #   edx-sphinx-theme
-sphinxcontrib-applehelp==1.0.4
+    #   pydata-sphinx-theme
+    #   sphinx-book-theme
+sphinx-book-theme==1.1.3
+    # via -r requirements/doc.in
+sphinxcontrib-applehelp==1.0.2
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
     # via sphinx
@@ -621,6 +636,7 @@ typing-extensions==4.9.0
     #   pydantic
     #   pydantic-core
     #   rich
+    #   pydata-sphinx-theme
     #   snowflake-connector-python
 tzdata==2023.3
     # via
