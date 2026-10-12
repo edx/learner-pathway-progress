@@ -1,0 +1,3 @@
+# Compile-time only: pin requirements to the oldest Django we support.
+# Included from constraints.txt; see the comment there before changing it. (LP-1282)
+Django<5.0
