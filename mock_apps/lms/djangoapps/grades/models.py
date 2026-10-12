@@ -36,9 +36,9 @@ class PersistentCourseGrade(TimeStampedModel):
         unique_together = [
             ('course_id', 'user_id'),
         ]
-        index_together = [
-            ('passed_timestamp', 'course_id'),
-            ('modified', 'course_id')
+        indexes = [
+            models.Index(fields=['passed_timestamp', 'course_id'], name="passed_timestamp_course_id_idx"),
+            models.Index(fields=['modified', 'course_id'], name="modified_course_id_idx"),
         ]
 
     user_id = models.IntegerField(blank=False, db_index=True)

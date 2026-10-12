@@ -13,6 +13,13 @@ Change Log
 
 Unreleased
 ~~~~~~~~~~
+
+[2.0.0] - 2026-09-28
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Breaking change: Dropped support for Python 3.8 and Django 3.2/4.0.
+* Added support for Python 3.12 and Django 5.2 (LTS).
+* Regenerated pinned requirements files for the new Python/Django baseline.
+
 [1.4.0]- 2024-11-06
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Deprecated edx-sphinx-theme and replaced it with sphinx-book-theme

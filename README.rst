@@ -22,7 +22,7 @@ One Time Setup
   cd learner-pathway-progress
 
   # Set up a virtualenv using virtualenvwrapper with the same name as the repo and activate it
-  mkvirtualenv -p python3.8 learner-pathway-progress
+  mkvirtualenv -p python3.12 learner-pathway-progress
 
 
 Every time you develop something in this repo
