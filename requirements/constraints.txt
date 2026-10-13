@@ -11,5 +11,11 @@
 # Common constraints for edx repos
 -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
 
-# platformdirs>=4.0 breaking upgrade job
+# 2023-12-11: platformdirs>=4.0 breaking upgrade job (added in 66aed8a, PR #23)
 platformdirs<4.0
+
+# 2026-10-12: compile pins against the oldest Django we support. edxapp (LMS) runs Django 4.2;
+# tox installs Django 5.2 for the django52 envs. Remove when edxapp moves to Django 5.2. (LP-1282)
+# Kept in its own file: setup.py copies pins listed here into install_requires, and the
+# published package must not require Django<5.0.
+-c django-constraints.txt

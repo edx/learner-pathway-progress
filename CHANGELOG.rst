@@ -14,6 +14,12 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
+[2.1.0] - 2026-10-12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Added support for Python 3.11 and Django 4.2 so the package can be installed in edxapp (LMS).
+* Supported: Python 3.11, 3.12; Django 4.2, 5.2.
+* Requirements are now compiled with Python 3.11 and Django 4.2 (the oldest supported versions).
+
 [2.0.0] - 2026-09-28
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Breaking change: Dropped support for Python 3.8 and Django 3.2/4.0.
